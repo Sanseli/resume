@@ -2417,11 +2417,6 @@ ajv@^8.0.0, ajv@^8.6.0, ajv@^8.8.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-animejs@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/animejs/-/animejs-3.2.1.tgz#de9fe2e792f44a777a7fdf6ae160e26604b0cdda"
-  integrity sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==
-
 ansi-escapes@^4.2.1, ansi-escapes@^4.3.1:
   version "4.3.2"
   resolved "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-4.3.2.tgz"
@@ -8396,6 +8391,11 @@ type-is@~1.6.18:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.24"
+
+typed.js@^2.0.12:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.12.tgz#246aff074c8e18d32ec27acb7be15094ac0bc0e1"
+  integrity sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
