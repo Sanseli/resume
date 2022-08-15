@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lekton:wght@700&family=Roboto&display=swap');
 body {
-  @apply mx-auto sm:py-40 h-full md:max-w-7xl font-roboto;
+  @apply mx-auto p-10 sm:py-40 h-full md:max-w-7xl font-roboto text-gray-900;
   /* margin: 10rem 20rem; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,4 +13,24 @@ body {
 
 html{
   @apply h-[100vh];
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
