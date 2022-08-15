@@ -1,0 +1,9 @@
+{
+     "editor.tabSize": 5,
+     "workbench.tree.indent": 5,
+     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+     "eslint.format.enable": true,
+     "[javascript]": {
+          "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+     }
+}
