@@ -1,13 +1,9 @@
 import React from 'react';
-import logo from '../../../src/assets/image.jpg';
-// import Links from './components/Links';
 
 function Home() {
   return (
-    <div className="Home text-center space-y-6 w-fit">
-      <h1 className="text-5xl">Hello I&apos;m Lisa!</h1>
-      <img className='rounded-full h-48 w-48 mx-auto' src={logo}/>
-      {/* <p>
+    <div className="Home ">
+      <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -17,7 +13,6 @@ function Home() {
                     occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
       </p>
-      <Links /> */}
     </div>
   );
 }

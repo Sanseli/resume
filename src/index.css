@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Lekton:wght@700&family=Roboto&display=swap');
 body {
-  @apply lg:mx-80 lg:my-40;
+  @apply mx-auto sm:py-40 h-full md:max-w-7xl font-roboto;
   /* margin: 10rem 20rem; */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #C8DED2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  @apply h-[100vh];
 }
