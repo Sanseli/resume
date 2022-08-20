@@ -1,3 +1,15 @@
-.active {
-     @apply underline;
+.link
+{
+     @apply relative;
+}
+
+.link:before {
+     @apply absolute content-[""] w-full h-[2px] bottom-0 left-0 bg-yellow-600 invisible;
+     transform: scaleX(0); 
+     transition: all 0.3s ease-in-out;
+}
+
+.link:hover:before, .link.active:before  {
+     @apply visible;
+     transform: scaleX(1);
 }

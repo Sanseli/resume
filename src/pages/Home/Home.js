@@ -21,7 +21,7 @@ function Home() {
         I’ve been working as a software developer since 2019, and because I love being creative I’m mostly interested and experienced in the front-end area.
       </p>
       <p>
-        In my free time I enjoy spending time with my cats, yoga and diving into the wondrous world of fantasy games. I also worked on crafting cosplays.
+        In my free time I enjoy spending time with my cats, and diving into the wondrous world of fantasy games. And I also worked on crafting some cosplays.
       </p>
     </div>
   );

@@ -15,7 +15,7 @@ function Navigation() {
   const location = useLocation();
 
   return (
-    <div className="Navigation flex flex-col space-y-2">
+    <div className="Navigation flex flex-col space-y-2 w-fit mx-auto">
       {links.map(function(link, i) {
         return <Link className={ `link ${location.pathname === link.url ? 'active' : ''}`} to={link.url} key={i}> {link.title} </Link>;
       })}

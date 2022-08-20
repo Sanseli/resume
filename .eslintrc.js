@@ -23,5 +23,6 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'off',
     'no-tabs': 'off',
     'max-len': 'off',
+    'react/prop-types': 'off',
   },
 };

@@ -9,7 +9,7 @@ import {
   Outlet,
 } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import Skills from './pages/Skills';
+import Skills from './pages/Skills/Skills';
 import Experiences from './pages/Experiences';
 import Contact from './pages/Contact';
 import Education from './pages/Education/Education';
