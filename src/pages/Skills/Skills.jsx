@@ -3,39 +3,42 @@ import './Skills.css';
 
 const Skills = () => {
   return (
-    <div className='w-full space-y-6 overflow-auto'>
-      <h2>Skills page</h2>
-      <div>
-        <h3>Languages</h3>
-        <Rating skill="Dutch (Flemish)" rating="5" />
-        <Rating skill="English" rating="4" />
-        <Rating skill="French" rating="2" />
-        <Rating skill="Finnish" rating="1" />
+    <div className='w-full space-y-8 overflow-auto'>
+      <div className='space-y-4'>
+        <h1 className='underline'>Languages</h1>
+        <div>
+          <Rating skill="Dutch (Flemish)" rating="5" />
+          <Rating skill="English" rating="4" />
+          <Rating skill="French" rating="2" />
+          <Rating skill="Finnish" rating="1" />
+        </div>
       </div>
 
-      <div>
-        <h3>Programming</h3>
-        <Rating skill="Vue.js / Nuxt.js" rating="4" />
-        <Rating skill="Angular" rating="4" />
-        <Rating skill="React" rating="3" />
-        <Rating skill="Java" rating="3" />
-        <Rating skill="Ruby on Rails" rating="2" />
-        <Rating skill="C#" rating="3" />
-        <Rating skill="HTML" rating="5" />
-        <Rating skill="CSS / SASS / SCSS" rating="4" />
-        <Rating skill="Flutter" rating="1" />
-        <Rating skill="SQL" rating="3" />
-        <Rating skill="Laravel" rating="3" />
-        <Rating skill="GIT" rating="4" />
-        <Rating skill="Python" rating="1" />
-
-
+      <div className='space-y-4'>
+        <h1 className='underline'>Programming</h1>
+        <div>
+          <Rating skill="Vue.js / Nuxt.js" rating="4" />
+          <Rating skill="Angular" rating="4" />
+          <Rating skill="React" rating="3" />
+          <Rating skill="Java" rating="3" />
+          <Rating skill="Ruby on Rails" rating="2" />
+          <Rating skill="C#" rating="3" />
+          <Rating skill="HTML" rating="5" />
+          <Rating skill="CSS / SASS / SCSS" rating="4" />
+          <Rating skill="Flutter" rating="1" />
+          <Rating skill="SQL" rating="3" />
+          <Rating skill="Laravel" rating="3" />
+          <Rating skill="GIT" rating="4" />
+          <Rating skill="Python" rating="1" />
+        </div>
       </div>
 
-      <div>
-        <h3>Others</h3>
-        <Rating skill="Adobe photoshop" rating="2" />
-        <Rating skill="Figma" rating="2" />
+      <div className='space-y-4'>
+        <h1 className='underline'>Others</h1>
+        <div>
+          <Rating skill="Adobe photoshop" rating="2" />
+          <Rating skill="Figma" rating="2" />
+        </div>
       </div>
     </div>
   );

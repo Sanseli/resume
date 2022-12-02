@@ -10,7 +10,6 @@ function Navigation() {
     {url: '/experiences', title: 'Experience'},
     {url: '/education', title: 'Education'},
     {url: '/skills', title: 'Skills'},
-    {url: '/contact', title: 'Contact'},
   ];
   const location = useLocation();
 

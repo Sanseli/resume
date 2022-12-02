@@ -21,8 +21,10 @@ function Home() {
         I’ve been working as a software developer since 2019, and because I love being creative I’m mostly interested and experienced in the front-end area.
       </p>
       <p>
-        In my free time I enjoy spending time with my cats, and diving into the wondrous world of fantasy games. And I also worked on crafting some cosplays.
+        In my free time I enjoy spending time with my cats, hiking, and diving into the wondrous world of fantasy games. And I also worked on crafting some cosplays in the past.
       </p>
+
+      <p className='text-center'>-- PS: Website is in development and still needs some improvement 😉 --</p>
     </div>
   );
 }
