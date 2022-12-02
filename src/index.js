@@ -1,18 +1,49 @@
+/* eslint-disable max-len */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import Footer from './components/Footer/Footer';
 import './index.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Outlet,
+} from 'react-router-dom';
 import Home from './pages/Home/Home';
+import Skills from './pages/Skills/Skills';
+import Experiences from './pages/Experiences';
+import Contact from './pages/Contact';
+import Education from './pages/Education/Education';
+import Title from './components/Title/Title';
+import Navigation from './components/Navigation/Navigation';
+import LinkedInButton from './components/LinkedInButton';
+import image from './assets/image.png';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-      <Home />
-      {/* <Footer /> */}
-    </React.StrictMode>,
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SideNav/>}>
+          <Route path="/" element={<Home />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="experiences" element={<Experiences/>} />
+          <Route path="education" element={<Education/>} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>,
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function SideNav() {
+  return (
+    <div className='flex flex-col md:flex-row h-full space-y-20 md:space-y-0 md:space-x-20'>
+      <div className="Home text-center space-y-10 flex-none my-auto w-80">
+        <Title />
+        <img className='rounded-full h-48 w-48 mx-auto shadow-md' src={image} />
+        <Navigation />
+        <LinkedInButton/>
+      </div>
+      <Outlet/>
+    </div>
+  );
+}

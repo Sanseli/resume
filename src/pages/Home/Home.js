@@ -1,23 +1,30 @@
+/* eslint-disable max-len */
 import React from 'react';
-import logo from '../../../src/assets/image.jpg';
-// import Links from './components/Links';
 
 function Home() {
+  function age() {
+    const birthday = new Date();
+    birthday.setDate(25);
+    birthday.setMonth(0);
+    birthday.setFullYear(1997);
+    const dif = Date.now() - birthday.getTime();
+    const age = new Date(dif);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  }
+
   return (
-    <div className="Home text-center space-y-6 w-fit">
-      <h1 className="text-5xl">Hello I&apos;m Lisa!</h1>
-      <img className='rounded-full h-48 w-48 mx-auto' src={logo}/>
-      {/* <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+    <div className="Home md:overflow-y-auto space-y-4 text-lg">
+      <p>
+        <span className='text-yellow-600 font-medium'>Nice to meet you!</span> My name is Lisa Sansen, I’m currenly {age()} years old and I’m from Belgium.
       </p>
-      <Links /> */}
+      <p>
+        I’ve been working as a software developer since 2019, and because I love being creative I’m mostly interested and experienced in the front-end area.
+      </p>
+      <p>
+        In my free time I enjoy spending time with my cats, hiking, and diving into the wondrous world of fantasy games. And I also worked on crafting some cosplays in the past.
+      </p>
+
+      <p className='text-center'>-- PS: Website is in development and still needs some improvement 😉 --</p>
     </div>
   );
 }

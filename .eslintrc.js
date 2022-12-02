@@ -20,5 +20,9 @@ module.exports = {
   'rules': {
     'require-jsdoc': 0,
     'vue/max-attributes-per-line': 'off',
+    'no-mixed-spaces-and-tabs': 'off',
+    'no-tabs': 'off',
+    'max-len': 'off',
+    'react/prop-types': 'off',
   },
 };
